@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/result"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:cursorVisible="false"
+        android:digits="1234567890."
+        android:focusable="false"
+        android:inputType="numberDecimal"
+        android:singleLine="true"
+        android:text="" />
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="0,1,2,3" >
+
+        <TableRow>
+            
+            <Button
+                android:id="@+id/btn_1"
+                android:text="1" />
+
+            <Button
+                android:id="@+id/btn_2"
+                android:text="2" />
+
+            <Button
+                android:id="@+id/btn_3"
+                android:text="3" />
+
+            <Button
+                android:id="@+id/btn_add"
+                android:text="+" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/btn_4"
+                android:text="4" />
+
+            <Button
+                android:id="@+id/btn_5"
+                android:text="5" />
+
+            <Button
+                android:id="@+id/btn_6"
+                android:text="6" />
+
+            <Button
+                android:id="@+id/btn_sub"
+                android:text="-" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/btn_7"
+                android:text="7" />
+
+            <Button
+                android:id="@+id/btn_8"
+                android:text="8" />
+
+            <Button
+                android:id="@+id/btn_9"
+                android:text="9" />
+
+            <Button
+                android:id="@+id/btn_mul"
+                android:text="*" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/btn_dot"
+                android:text="." />
+
+            <Button
+                android:id="@+id/btn_0"
+                android:text="0" />
+
+            <Button
+                android:id="@+id/btn_eq"
+                android:text="=" />
+
+            <Button
+                android:id="@+id/btn_div"
+                android:text="/" />
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/btn_clear"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/clear" />
+
+</LinearLayout>
